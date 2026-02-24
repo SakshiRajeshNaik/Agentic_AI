@@ -1,0 +1,27 @@
+from sentence_transformers import SentenceTransformer
+import pandas as pd
+
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+sentences = [
+    "I love pizza",
+    "Pizza is my favourite food",
+    "Stock market is up today",
+    "TATA AIG offers comprehensive car insurance",
+    "Health insurance covers hospitalization expenses"
+]
+
+embeddings = model.encode(sentences)
+
+# convert embeddings to list
+emb_list = [emb.tolist() for emb in embeddings]
+
+df = pd.DataFrame({
+    "id": range(1, len(sentences)+1),
+    "text": sentences,
+    "embeddings": emb_list
+})
+
+df.to_csv("vectosphere_ready.csv", index=False)
+
+print("CSV saved!")
