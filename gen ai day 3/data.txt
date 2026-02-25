@@ -1,0 +1,9 @@
+Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think and learn. AI systems can perform tasks such as problem-solving, decision-making, speech recognition, and language translation.
+
+Machine Learning (ML) is a subset of AI that allows computers to learn from data without being explicitly programmed. It uses algorithms to identify patterns and make predictions.
+
+Deep Learning is a specialized area of machine learning that uses artificial neural networks with multiple layers. It is widely used in image recognition, natural language processing, and speech recognition.
+
+Natural Language Processing (NLP) is a field of AI that focuses on the interaction between computers and human language. It enables applications like chatbots, translation systems, and voice assistants.
+
+Generative AI refers to models that can generate new content such as text, images, audio, and code. Examples include large language models and image generation systems.
